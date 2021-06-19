@@ -1,0 +1,11 @@
+@import 'variables';
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap');
+
+$fontfamily-title: 'Inter', sans-serif;
+$fontfamily-body: 'Lexend Deca', sans-serif;
+
+body {
+    font-size: $fontbase;
+    font-family: $fontfamily-body;
+    color: $whiteSlight;
+}
