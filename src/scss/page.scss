@@ -13,6 +13,7 @@ main {
 
     img {
         display: block;
+        margin: 0 auto;
         max-width: 100%;
         border-top-left-radius: 8px;
         border-top-right-radius: 8px;
@@ -48,6 +49,58 @@ main {
             font-weight: bold;
             margin-bottom: ($gutter/2);
             text-transform: lowercase;
+        }
+    }
+}
+
+@media (min-width: $desktop) {
+    body {
+        padding: ($gutter*4) ($gutter*7);
+        height: 100vh;
+        box-sizing: border-box;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    main {
+        display: flex;
+    }
+
+    .texts__container {
+        order: 0;
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: $gutter ($gutter*4) ($gutter*2) ($gutter*4);
+
+        .title {
+            text-align: left;
+            font-size: 40px;
+            padding-right: ($gutter*3);
+        }
+
+        p {
+            text-align: left;
+            max-width: 347px;
+        }
+    }
+
+    .img__container {
+        order: 1;
+        width: 50%;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    .benefits__list {
+        display: flex;
+
+        li {
+            margin-right: $gutter;
         }
     }
 }
