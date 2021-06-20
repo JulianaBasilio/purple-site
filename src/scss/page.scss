@@ -9,11 +9,14 @@ main {
 }
 
 .img__container {
+    background: $medium-purple;
+
     img {
         display: block;
         max-width: 100%;
         border-top-left-radius: 8px;
         border-top-right-radius: 8px;
+        opacity: 0.5;
     }
 }
 
@@ -36,11 +39,15 @@ main {
 
     li {
         margin-top: ($gutter*2);
+        text-transform: uppercase;
 
         span {
             display: block;
             color: $white;
             font-size: 20px;
+            font-weight: bold;
+            margin-bottom: ($gutter/2);
+            text-transform: lowercase;
         }
     }
 }
