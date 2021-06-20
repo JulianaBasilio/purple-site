@@ -1,10 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap');
 
-$fontfamily-title: 'Inter', sans-serif;
-$fontfamily-body: 'Lexend Deca', sans-serif;
+$fontfamily-body: 'Inter', sans-serif;
+$fontfamily-title: 'Lexend Deca', sans-serif;
 
 body {
     font-size: $fontbase;
     font-family: $fontfamily-body;
-    color: $whiteSlight;
+    color: $whiteMoreSlight;
+}
+
+h1 {
+    font-size: 29px;
+    font-family: $fontfamily-title;
+    color: $white;
+
+    margin: ($gutter*2) 0 $gutter;
+}
+
+.purple__text {
+    color: $medium-purple;
 }
